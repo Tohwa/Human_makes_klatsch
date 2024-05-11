@@ -347,6 +347,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4985737909207703493, guid: 4a076840ad024704f93bd67b36c5f8e8, type: 3}
   m_PrefabInstance: {fileID: 235029149}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &341160611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1485935898283669502, guid: a5d6651810fe0cf42b098e3b4dd0ee89, type: 3}
+  m_PrefabInstance: {fileID: 7681807670114799894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &469483686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1379,6 +1384,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1948569318 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7811144312204231885, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+  m_PrefabInstance: {fileID: 2011381951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2011381951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1401,7 +1411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638400354338256042, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 111
       objectReference: {fileID: 0}
     - target: {fileID: 4638400354338256042, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1709,7 +1719,7 @@ Transform:
   m_GameObject: {fileID: 2002452957972050565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15151499, y: 0, z: -10}
+  m_LocalPosition: {x: -0.15151499, y: -0.3, z: -10}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1726,6 +1736,7 @@ GameObject:
   - component: {fileID: 1204585388034450880}
   - component: {fileID: 6683099890659338484}
   - component: {fileID: 2611694272522189493}
+  - component: {fileID: 6683099890659338485}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1781,7 +1792,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.62628204
+  orthographic size: 1.0343609
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1797,6 +1808,20 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &6683099890659338485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002452957972050565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fa0e11b890d0d48a873f04d37e65dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 341160611}
+  _playableArea: {fileID: 1948569318}
 --- !u!1001 &7681807670114799894
 PrefabInstance:
   m_ObjectHideFlags: 0
