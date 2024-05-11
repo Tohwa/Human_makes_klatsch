@@ -37,5 +37,9 @@ public class EggSpriteSetter : MonoBehaviour
         {
             spriteRenderer.sprite = threeCracks;
         }
+        else if (GameManager.Instance.GetPlayerHealth() == 0)
+        {
+            spriteRenderer.sprite = threeCracks;
+        }
     }
 }
