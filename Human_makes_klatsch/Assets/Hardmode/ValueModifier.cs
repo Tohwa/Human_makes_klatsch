@@ -17,7 +17,7 @@ public class ValueModifier : MonoBehaviour
         {
             //fallspeed duvuded by two
         }
-        else
+        else if(!hardmode.GetMoreSpeed() && !hardmode.GetLessSpeed())
         {
             //fallspeed remains unchanged
         }
@@ -41,7 +41,11 @@ public class ValueModifier : MonoBehaviour
         {
             //Egg health divided by Two
         }
-        else
+        else if (hardmode.GetDoubleHealth())
+        {
+            //Egg health doubled
+        }
+        else if(!hardmode.GetHalfHealth() && !hardmode.GetDoubleHealth())
         {
             //Egg health remains unchained
         }

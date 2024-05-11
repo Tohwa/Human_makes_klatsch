@@ -10,6 +10,8 @@ public class Hardmode : MonoBehaviour
     private bool noNests { get; set; }
     private bool halfHealth { get; set; }
 
+    private bool doubleHealth { get; set; }
+
     public bool GetMoreSpeed(){ return moreSpeed; }
 
     public void SetMoreSpeed(bool _value) { moreSpeed = _value; }
@@ -25,4 +27,8 @@ public class Hardmode : MonoBehaviour
     public bool GetHalfHealth() { return halfHealth; }
 
     public void SetHalfHearts(bool _value) { halfHealth = _value; }
+
+    public bool GetDoubleHealth() { return doubleHealth; }
+
+    public void SetDoubleHealth(bool _value) { doubleHealth = _value; }
 }
