@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 10
   _returnAngle: 0
-  _useDebugger: 0
+  _useDebugger: 1
 --- !u!1 &2766885451266336035
 GameObject:
   m_ObjectHideFlags: 0
