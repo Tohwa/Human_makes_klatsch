@@ -547,6 +547,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7086875889827439682, guid: 2d9669b5ea843dd4db8ebfa66bab1697, type: 3}
+      propertyPath: m_Size.y
+      value: 0.30466223
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086875889827439682, guid: 2d9669b5ea843dd4db8ebfa66bab1697, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.09892964
+      objectReference: {fileID: 0}
     - target: {fileID: 8550664681303683774, guid: 2d9669b5ea843dd4db8ebfa66bab1697, type: 3}
       propertyPath: m_Name
       value: PlayZoneBorder
