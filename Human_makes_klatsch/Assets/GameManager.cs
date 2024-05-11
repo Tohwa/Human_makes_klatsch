@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> EggSpawns = new List<GameObject>();
 
+    [SerializeField]
     private float playerHealth = 4;
     private float damageValue = 1;
 

@@ -7,13 +7,13 @@ public class SnakeFrontCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Egg"))
             PlayerDetected?.Invoke(true, collision.gameObject.transform);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Egg"))
             PlayerDetected?.Invoke(false, collision.gameObject.transform);
     }
 }
