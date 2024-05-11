@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8424102921163013459}
   - component: {fileID: 1465926807590666450}
   m_Layer: 0
-  m_Name: Square
+  m_Name: branch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 1466731164776700346}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.24715881, w: 0.96897495}
-  m_LocalPosition: {x: -0.087, y: -0.169, z: 0}
+  m_LocalPosition: {x: -0.087, y: -0.169, z: 101}
   m_LocalScale: {x: 0.0838, y: 0.3211, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
