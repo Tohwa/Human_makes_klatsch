@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,19 +11,37 @@ public class GameManager : MonoBehaviour
     private float playerHealth = 4;
     private float damageValue = 1;
 
-    private bool winCondition { get; set;} = false;
+    private bool winCondition { get; set; } = false;
 
-    private bool looseCondition { get; set;} = false;
+    private bool looseCondition { get; set; } = false;
 
     private void Awake()
     {
-        if(instance != null && instance != this)
+        if (instance != null && instance != this)
         {
             Destroy(this);
         }
         else
         {
             instance = this;
+        }
+    }
+
+    private void Update()
+    {
+        if (playerHealth <= 0)
+        {
+            playerHealth = 0;
+        }
+
+        if (winCondition)
+        {
+            SceneManager.LoadScene("Endscreen");
+        }
+
+        if (looseCondition)
+        {
+            SceneManager.LoadScene("Endscreen");
         }
     }
 
@@ -43,6 +63,9 @@ public class GameManager : MonoBehaviour
 
     public void SetLooseCondition()
     {
-        looseCondition = true;
+        if (playerHealth == 0)
+        {
+            looseCondition = true;
+        }
     }
 }
