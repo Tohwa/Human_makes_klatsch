@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -11,9 +10,11 @@ public class GameManager : MonoBehaviour
     private float playerHealth = 4;
     private float damageValue = 1;
 
-    private bool winCondition { get; set; } = false;
+    [SerializeField]
+    private bool winCondition = false;
 
-    private bool looseCondition { get; set; } = false;
+    [SerializeField]
+    private bool looseCondition = false;
 
     private void Awake()
     {
@@ -36,12 +37,12 @@ public class GameManager : MonoBehaviour
 
         if (winCondition)
         {
-            SceneManager.LoadScene("Endscreen");
+            SceneManager.LoadScene("EndScreen");
         }
 
         if (looseCondition)
         {
-            SceneManager.LoadScene("Endscreen");
+            SceneManager.LoadScene("EndScreen");
         }
     }
 
