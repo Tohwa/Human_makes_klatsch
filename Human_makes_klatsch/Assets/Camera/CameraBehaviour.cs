@@ -19,6 +19,10 @@ public class Cameralock : MonoBehaviour
         cameraHalfWidth = _camera.orthographicSize * _camera.aspect;
     }
 
+    private void Update()
+    {
+        _player = GameObject.FindGameObjectWithTag("Egg");
+    }
     private void LateUpdate()
     {
         Vector3 playerPosition = _player.transform.position;

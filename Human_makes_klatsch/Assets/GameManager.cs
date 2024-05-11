@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [SerializeField]
+    GameObject eggPrefab;
+
+    [SerializeField]
+    private List<GameObject> EggSpawns = new List<GameObject>();
+
     private float playerHealth = 4;
     private float damageValue = 1;
 
@@ -25,6 +31,15 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(this);
+    }
+
+    private void Start()
+    {
+        int rnd = Random.Range(0, EggSpawns.Count);
+
+        Transform spawnPos = EggSpawns[rnd].transform;
+
+        Instantiate(eggPrefab, spawnPos.position, Quaternion.identity, null);
     }
 
     private void Update()
