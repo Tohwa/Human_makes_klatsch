@@ -53,11 +53,6 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("EndScreen");
         }
-
-        if (looseCondition)
-        {
-            SceneManager.LoadScene("EndScreen");
-        }
     }
 
     public float GetPlayerHealth() { return playerHealth; }
