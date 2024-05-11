@@ -31,6 +31,17 @@ public class BirdController : MonoBehaviour
 
         // Move the bird from current pos to target
         _birdObject.transform.position = Vector3.MoveTowards(_birdObject.transform.position, _target.transform.position, _movementSpeed * Time.deltaTime);
+
+
+        // Improved Focus
+        Vector3 direction = _target.transform.position - transform.position;
+        direction.Normalize();
+
+        // Get Z rotation from X and Y (using Mathf library)
+        float rotationZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        // Set rotation on Z axis
+        transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, rotationZ - 90);
     }
 
 
@@ -46,11 +57,13 @@ public class BirdController : MonoBehaviour
             {
                 _target = _pointB;
 
+                /*
                 // Flip the sprite to match movement direction
                 if(_spriteRenderer is not null)
                 {
                     _spriteRenderer.flipY = false;
                 }
+                */
 
                 return;
             }
@@ -58,11 +71,13 @@ public class BirdController : MonoBehaviour
 
             _target = _pointA;
 
+            /*
             // Flip the sprite to match movement direction
             if(_spriteRenderer is not null)
             {
                 _spriteRenderer.flipY = true;
             }
+            */
         }
     }
 
