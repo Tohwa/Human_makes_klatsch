@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
         Vector3 targetPosition = _followTarget.position + _offset;
 
         // Fixed X axis
-        targetPosition.x = 0;
+        //targetPosition.x = 0;
 
         // Move Camera to new follow position
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref _velocity, _followSmoothness);
