@@ -8,10 +8,19 @@ public class BirdCollision : MonoBehaviour
     {
         if(other.collider.CompareTag("Player"))
         {
-            // Connect to event system here ...
+            // Inform listeners that player was hit
+            OnPlayerHit?.Invoke();
 
-            // Simple debug message
-            Debug.Log(this + ": Hit player object.");
+
+            // Connect to event system here ...
         }
     }
+
+
+    public delegate void PlayerHit();
+
+    /// <summary>
+    /// Called when the bird hits a game object with the "Player" tag.
+    /// </summary>
+    public event PlayerHit OnPlayerHit;
 }
