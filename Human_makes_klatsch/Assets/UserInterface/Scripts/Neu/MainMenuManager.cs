@@ -120,6 +120,7 @@ public class MainMenuManager : MonoBehaviour
         buttonBase.SetActive(false);
         button.SetActive(false);
         mainSettings.SetActive(false);
+        mainCredits.SetActive(false);
     }
 
     private IEnumerator DelayBackToMainLVLChoice()
