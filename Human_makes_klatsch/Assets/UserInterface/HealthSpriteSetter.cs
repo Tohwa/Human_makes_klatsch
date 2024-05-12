@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,6 @@ public class HealthSpriteSetter : MonoBehaviour
 {
     GameObject player;
     Image texture;
-   
 
     public Sprite noCracks;
     public Sprite oneCrack;

@@ -45,9 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b82909418a90aab41b920e083069bb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 3
-  _returnAngle: 5
+  _movementSpeed: 1.5
+  _returnAngle: -45
   _useDebugger: 0
+  PlayerDetected: {fileID: 11400000, guid: db9507f35e1bf4e40a8e359359e00534, type: 2}
+  AttackingPlayer: {fileID: 11400000, guid: 36153a5f52de36b4e8571693edc6cf0d, type: 2}
 --- !u!1001 &1269982210795298116
 PrefabInstance:
   m_ObjectHideFlags: 0

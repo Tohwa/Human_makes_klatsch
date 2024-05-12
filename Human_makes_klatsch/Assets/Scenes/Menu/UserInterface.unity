@@ -217,14 +217,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 847461474}
-    - target: {fileID: 795849690314846061, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 795849690314846061, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 2905471762268529478, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
@@ -233,14 +225,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 847461474}
-    - target: {fileID: 5719648179500322169, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
+    - target: {fileID: 6084587463936551768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
+      propertyPath: _audioSource
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5719648179500322169, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
+    - target: {fileID: 6084587463936551768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
+      propertyPath: _audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 353d173eeca5eb64786bde59e68de13f, type: 3}
+    - target: {fileID: 6084587463936551768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
+      propertyPath: _audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e330f4318ccd3784eb7922c7d235db65, type: 3}
+    - target: {fileID: 6084587463936551768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
+      propertyPath: _audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2cc3ab4431f75514b91a5667e8ce8bfc, type: 3}
     - target: {fileID: 6675352190160365340, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -321,34 +321,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7408961137747868699, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7733522220834960445, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 847461474}
-    - target: {fileID: 7733522220834960445, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSettings
-      objectReference: {fileID: 0}
-    - target: {fileID: 7733522220834960445, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 8019633127551402768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 847461474}
-    - target: {fileID: 8019633127551402768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenSettings
-      objectReference: {fileID: 0}
-    - target: {fileID: 8019633127551402768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

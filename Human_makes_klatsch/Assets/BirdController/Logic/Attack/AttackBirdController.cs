@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -26,6 +27,10 @@ public class AttackBirdController : MonoBehaviour
     private Vector3 _returnPosition;
     private SpriteRenderer _spriteRenderer;
 
+    [SerializeField]
+    public GameEvent PlayerDetected, AttackingPlayer;
+
+
     // Start Event
     // -> In this case should be called when the bird is spawned.
     void Start()
@@ -38,6 +43,8 @@ public class AttackBirdController : MonoBehaviour
 
         // Try to find the sprite renderer
         FindSpriteRenderer();
+
+        PlayerDetected.Raise();
     }
 
     // Update Event
@@ -251,12 +258,19 @@ public class AttackBirdController : MonoBehaviour
     /// </summary>
     private void PlayerHitBinding()
     {
-
         // Tells the bird to return
         EndAttack();
 
         // Debug Message
         PrintMessage(true, "Attack target hit. End attack -> Start return.");
+
+        StartCoroutine(PlayAttackSound());
+    }
+
+    private IEnumerator PlayAttackSound()
+    {
+        yield return new WaitForSeconds(1);
+        AttackingPlayer.Raise();
     }
 
     #endregion

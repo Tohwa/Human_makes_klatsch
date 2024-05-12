@@ -694,6 +694,12 @@ MonoBehaviour:
       _path: Assets/Scenes/Menu/UserInterface.unity
     loadInEditor: 1
     loadMethod: 1
+  - scene:
+      editorAssetGUID: bd6a1963268920e478d73d2d735dadf6
+      name: Audio
+      _path: Assets/Scenes/WIP/Audio.unity
+    loadInEditor: 1
+    loadMethod: 1
   _isMainScene: 0
   _version: 1
   _thisScenePath: Assets/Scenes/Level One.unity
