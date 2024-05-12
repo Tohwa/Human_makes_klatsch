@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 93875d69e8cc0244c9d9ae0beef3d393
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - noCracks: {instanceID: 0}
+  - oneCrack: {instanceID: 0}
+  - twoCracks: {instanceID: 0}
+  - threeCracks: {instanceID: 0}
+  - fourCracks: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

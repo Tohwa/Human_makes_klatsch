@@ -168,9 +168,9 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   pauseSettings: {fileID: 0}
   lvlChoiceMenu: {fileID: 1152944853}
-  tutorialOne: {fileID: 0}
-  tutorialTwo: {fileID: 0}
-  tutorialThree: {fileID: 0}
+  tutorialOne: {fileID: 1476373489}
+  tutorialTwo: {fileID: 1476373488}
+  tutorialThree: {fileID: 1476373487}
   buttonReact: {fileID: 676572829}
   button: {fileID: 116311812}
   buttonBase: {fileID: 591902963}
@@ -597,6 +597,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2aeb43a91ffd2c4db82c54a54700073, type: 3}
+--- !u!1 &1476373487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 282590574060021900, guid: f2aeb43a91ffd2c4db82c54a54700073, type: 3}
+  m_PrefabInstance: {fileID: 1476373486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1476373488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2592016605463125105, guid: f2aeb43a91ffd2c4db82c54a54700073, type: 3}
+  m_PrefabInstance: {fileID: 1476373486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1476373489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6659730543081933550, guid: f2aeb43a91ffd2c4db82c54a54700073, type: 3}
+  m_PrefabInstance: {fileID: 1476373486}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1505058433
 GameObject:
   m_ObjectHideFlags: 0
