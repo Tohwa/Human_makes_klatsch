@@ -116,10 +116,11 @@ public class MainMenuManager : MonoBehaviour
         buttonReact.SetActive(true);
         yield return new WaitForSeconds(1f);
         mainMenu.SetActive(true);
-        buttonReact.SetActive(false);
-        buttonBase.SetActive(false);
-        button.SetActive(false);
+        //buttonReact.SetActive(false);
+        //buttonBase.SetActive(false);
+        //button.SetActive(false);
         mainSettings.SetActive(false);
+        mainCredits.SetActive(false);
     }
 
     private IEnumerator DelayBackToMainLVLChoice()
