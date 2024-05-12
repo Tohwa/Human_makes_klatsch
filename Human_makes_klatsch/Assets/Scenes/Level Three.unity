@@ -1052,6 +1052,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1813940611}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 255381284}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 1567698331}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 1302872707}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[4]
+      value: 
+      objectReference: {fileID: 2136183490}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[5]
+      value: 
+      objectReference: {fileID: 894233315}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[6]
+      value: 
+      objectReference: {fileID: 1026928530}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[7]
+      value: 
+      objectReference: {fileID: 1907916349}
+    - target: {fileID: 7796701801268772967, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
+      propertyPath: EggSpawns.Array.data[8]
+      value: 
+      objectReference: {fileID: 197669795}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1197,7 +1233,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.2430782
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -9,16 +9,14 @@ public class CheckForEndMessage : MonoBehaviour
     [SerializeField] GameObject loose;
 
     // Update is called once per frame
-    void Start()
+    public void SetWin()
     {
-        if (GameManager.Instance.GetWinCondition())
-        {
-            win.SetActive(true);
-        }
-        else if(GameManager.Instance.GetLooseCondition()) 
-        { 
-            loose.SetActive(true); 
-        }
+        win.SetActive(true);
+    }
+
+    public void SetLoose()
+    {
+        loose.SetActive(true);
     }
 
     public void ReturnToMenu()
