@@ -6,7 +6,7 @@ public class SnakeAttack : MonoBehaviour
     private int _attackCounter = 1;
 
     [SerializeField]
-    private float _impulseForce = 1.0f;
+    private float _impulseForce = 10.0f;
 
     [SerializeField]
     public GameEvent SnakeAttacked;
@@ -20,13 +20,13 @@ public class SnakeAttack : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Egg"))
         {
-            Debug.LogFormat("Dealt Damage!!!");
             GameManager.Instance.ApplyDamager();
-            SnakeAttacked.Raise();
+            Debug.LogFormat("Dealt Damage!!!");
 
             Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
-            playerRigidbody.AddForce(_impulseForce * (collision.transform.position - this.transform.position).normalized, ForceMode2D.Impulse);
+            playerRigidbody.AddForce(_impulseForce * (Vector2.right * (collision.transform.position.x - this.transform.position.x)).normalized, ForceMode2D.Impulse);
 
+            SnakeAttacked.Raise();
             _attackCounter--;
         }
     }

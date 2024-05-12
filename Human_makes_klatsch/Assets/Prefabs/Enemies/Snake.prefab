@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackCounter: 1
-  _impulseForce: 2
+  _impulseForce: 7.5
   SnakeAttacked: {fileID: 11400000, guid: 08b524ff298bfa04eb2df40b4f5ecdba, type: 2}
 --- !u!1 &8525076022743711446
 GameObject:

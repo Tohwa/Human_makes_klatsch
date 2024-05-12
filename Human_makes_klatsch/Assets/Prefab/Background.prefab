@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7796701801268772967}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4ef0056494ac44a9c4593a75f64be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ResetPlayerHealth: {fileID: 11400000, guid: 6fb19e57c5d51fb4aaf6e3f858998102, type: 2}
   eggPrefab: {fileID: 4106806700640378431, guid: 89f83427840ac944689e37aa5a46697a, type: 3}
   EggSpawns:
   - {fileID: 0}

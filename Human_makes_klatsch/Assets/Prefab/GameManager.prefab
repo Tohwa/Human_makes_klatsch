@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4093877715287286481}
   - component: {fileID: 895517255658205679}
   - component: {fileID: 3627218594336232486}
+  - component: {fileID: 7203825040549927547}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -49,17 +50,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winCon: {fileID: 11400000, guid: 4acb5e64f6d623349952fdbb8b9b3c9c, type: 2}
   loseCon: {fileID: 11400000, guid: 393ede26fb8d76e4fa10c0a3503af4a2, type: 2}
-  eggPrefab: {fileID: 4106806700640378431, guid: 89f83427840ac944689e37aa5a46697a, type: 3}
-  EggSpawns:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   playerHealth: 4
   winCondition: 0
   looseCondition: 0
@@ -168,6 +158,34 @@ MonoBehaviour:
       - m_Target: {fileID: 7391263340625181362}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ChangeSceneToEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7203825040549927547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2279826869678454327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce466afb5b124e040bf247c5dd5240ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 6fb19e57c5d51fb4aaf6e3f858998102, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7391263340625181362}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetPlayerHealth
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

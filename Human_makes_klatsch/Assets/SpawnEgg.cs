@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpawnEgg : MonoBehaviour
 {
+    [SerializeField] GameEvent ResetPlayerHealth;
+
     [SerializeField]
     GameObject eggPrefab;
 
@@ -13,10 +15,15 @@ public class SpawnEgg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetPlayerHealth.Raise();
+
+
         int rnd = Random.Range(0, EggSpawns.Count);
 
         Transform spawnPos = EggSpawns[rnd].transform;
 
         Instantiate(eggPrefab, spawnPos.position, Quaternion.identity, null);
+    
+    
     }
 }

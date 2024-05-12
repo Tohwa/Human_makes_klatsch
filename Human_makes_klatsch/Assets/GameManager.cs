@@ -45,6 +45,14 @@ public class GameManager : MonoBehaviour
 
     public float GetPlayerHealth() { return playerHealth; }
 
+    public void SetPlayerHealth(float _value)
+    {
+        if(_value != 4)
+        {
+            _value = 4;
+            playerHealth = _value;
+        }
+    }
     public void ApplyDamager()
     {
         playerHealth = playerHealth - damageValue;
@@ -89,5 +97,10 @@ public class GameManager : MonoBehaviour
     public void SetHunterStatus(bool _value)
     {
         HunterSpawned = _value;
+    }
+
+    public void SetPlayerHealth()
+    {
+        playerHealth = 4;
     }
 }

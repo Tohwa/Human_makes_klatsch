@@ -881,46 +881,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4093877715287286481, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[0]
-      value: 
-      objectReference: {fileID: 1526152861}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[1]
-      value: 
-      objectReference: {fileID: 756553081}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[2]
-      value: 
-      objectReference: {fileID: 1283288115}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[3]
-      value: 
-      objectReference: {fileID: 1267403988}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[4]
-      value: 
-      objectReference: {fileID: 778776161}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[5]
-      value: 
-      objectReference: {fileID: 1784769697}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[6]
-      value: 
-      objectReference: {fileID: 741697678}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[7]
-      value: 
-      objectReference: {fileID: 1578590794}
-    - target: {fileID: 7391263340625181362, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
-      propertyPath: EggSpawns.Array.data[8]
-      value: 
-      objectReference: {fileID: 1938221325}
     - target: {fileID: 8863538984863669282, guid: b92787dc45bce574a9bc229c6850ccc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

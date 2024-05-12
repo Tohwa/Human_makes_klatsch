@@ -9,6 +9,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
+    [SerializeField, Range(0, 1)]
+    private float eggDamageVolume;
+
     [SerializeField]
     private AudioClip[] eggDamageSound = new AudioClip[3];
 
@@ -40,19 +43,19 @@ public class AudioManager : MonoBehaviour
 
     public void PlayEggSound(float playerHealth)
     {
-        if(playerHealth == 3)
+        if (playerHealth == 3)
         {
-            audioSource.PlayOneShot(eggDamageSound[0]);
+            audioSource.PlayOneShot(eggDamageSound[0], eggDamageVolume);
             Debug.Log("PlayEggSound1");
         }
-        else if(playerHealth == 2)
+        else if (playerHealth == 2)
         {
-            audioSource.PlayOneShot(eggDamageSound[1]);
+            audioSource.PlayOneShot(eggDamageSound[1], eggDamageVolume);
             Debug.Log("PlayEggSound2");
         }
-        else if(playerHealth == 1)
+        else if (playerHealth == 1)
         {
-            audioSource.PlayOneShot(eggDamageSound[2]);
+            audioSource.PlayOneShot(eggDamageSound[2], eggDamageVolume);
             Debug.Log("PlayEggSound3");
         }
     }
