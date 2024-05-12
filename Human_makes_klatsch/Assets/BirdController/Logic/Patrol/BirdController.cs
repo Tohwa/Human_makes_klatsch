@@ -65,7 +65,7 @@ public class BirdController : MonoBehaviour
                 // Flip the sprite to match movement direction
                 if (_spriteRenderer is not null)
                 {
-                    _spriteRenderer.flipY = false;
+                    _spriteRenderer.flipX = true;
                 }
 
 
@@ -79,21 +79,32 @@ public class BirdController : MonoBehaviour
             // Flip the sprite to match movement direction
             if (_spriteRenderer is not null)
             {
-                _spriteRenderer.flipY = true;
+                _spriteRenderer.flipX = false;
             }
 
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Egg"))
-        {
-            //Debug.Log("Dealt Damage!!!");
-            GameManager.Instance.ApplyDamager();
-            Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
-            playerRigidbody.AddForce(_impulseForce * (collision.transform.position - this.transform.position).normalized, ForceMode2D.Impulse);
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Egg"))
+    //    {
+    //        //Debug.Log("Dealt Damage!!!");
+    //        GameManager.Instance.ApplyDamager();
+    //        Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+    //        playerRigidbody.AddForce(_impulseForce * (collision.transform.position - this.transform.position).normalized, ForceMode2D.Impulse);
+    //    }
+    //}
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Egg"))
+    //    {
+    //        //Debug.Log("Dealt Damage!!!");
+    //        GameManager.Instance.ApplyDamager();
+    //        Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+    //        playerRigidbody.AddForce(_impulseForce * (collision.transform.position - this.transform.position).normalized, ForceMode2D.Impulse);
+    //    }
+    //}
 
 }

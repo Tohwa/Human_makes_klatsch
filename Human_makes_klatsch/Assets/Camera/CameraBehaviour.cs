@@ -6,6 +6,7 @@ public class Cameralock : MonoBehaviour
 {
     #region
     [SerializeField] private GameObject _player;
+    [SerializeField] private GameObject _background;
     [SerializeField] private Collider2D _playableArea;
 
     private float cameraHalfHeight;
@@ -21,7 +22,18 @@ public class Cameralock : MonoBehaviour
 
     private void Update()
     {
-        _player = GameObject.FindGameObjectWithTag("Egg");
+        if (_player == null && GameManager.Instance.GetPlayerHealth() > 0)
+        {
+            _player = GameObject.FindGameObjectWithTag("Egg");
+            Debug.Log("Egg found!");
+        }
+
+        if (_background == null)
+        {
+            _background = GameObject.FindGameObjectWithTag("Background");
+        }
+
+        
     }
     private void LateUpdate()
     {
@@ -32,4 +44,4 @@ public class Cameralock : MonoBehaviour
 
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
-}      
+}
