@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e82041533c8535f42ba91317f1bab326
+guid: 8f6912b7a68b22b48a17a1f50de00e5e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Credits_ohne_form_0
+      name: Leaf_Nest Credits 1080x1920_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 253
         y: 0
-        width: 187
-        height: 56
+        width: 1490
+        height: 1079
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75f57ba4b04c4af47a240ab7217dfcaf
-      internalID: -1196653175
+      spriteID: a843de862cefea5419c70cef4b30a769
+      internalID: 642591017
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Credits_ohne_form_0: -1196653175
+      Leaf_Nest Credits 1080x1920_0: 642591017
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
