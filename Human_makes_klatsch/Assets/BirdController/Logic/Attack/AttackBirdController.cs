@@ -84,7 +84,7 @@ public class AttackBirdController : MonoBehaviour
     private void FindTarget()
     {
         // Try to find the egg
-        _target = GameObject.FindGameObjectWithTag("Player");
+        _target = GameObject.FindGameObjectWithTag("Egg");
 
         // Destroy self if egg not found
         if(_target is null)
@@ -251,6 +251,7 @@ public class AttackBirdController : MonoBehaviour
     /// </summary>
     private void PlayerHitBinding()
     {
+
         // Tells the bird to return
         EndAttack();
 
@@ -284,6 +285,7 @@ public class AttackBirdController : MonoBehaviour
 
         // Destroy self
         Destroy(this.gameObject);
+        GameManager.Instance.SetHunterStatus(false);
     }
 
     #endregion
