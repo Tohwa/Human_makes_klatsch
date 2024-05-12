@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeSceneToEnd()
     {
-        SceneManager.LoadScene("Ending");
+        SceneManager.LoadScene("EndScreen");
     }
 
     public float GetPlayerHealth() { return playerHealth; }
