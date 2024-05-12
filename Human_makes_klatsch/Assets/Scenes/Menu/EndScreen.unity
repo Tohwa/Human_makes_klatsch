@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 161950644}
   - component: {fileID: 161950643}
   - component: {fileID: 161950642}
+  - component: {fileID: 161950646}
   m_Layer: 5
   m_Name: EndCanvas
   m_TagString: Untagged
@@ -435,6 +436,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &161950646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161950641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f3de87d831634b8e3e92ad26266ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  win: {fileID: 1821076853}
+  loose: {fileID: 1471775164}
 --- !u!1 &275147859
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,9 +868,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1691437660}
-        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: OnClick_NormalBackToMain
+      - m_Target: {fileID: 161950646}
+        m_TargetAssemblyTypeName: CheckForEndMessage, Assembly-CSharp
+        m_MethodName: ReturnToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -937,8 +952,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000023842, y: -202}
-  m_SizeDelta: {x: 1392.5271, y: 302.3527}
+  m_AnchoredPosition: {x: 0.000023842, y: -140.769}
+  m_SizeDelta: {x: 1392.527, y: 179.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090089464
 MonoBehaviour:
@@ -1284,7 +1299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -110}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1691437659
@@ -1322,6 +1337,8 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   pauseSettings: {fileID: 0}
   endScreen: {fileID: 275147859}
+  winScene: {fileID: 1821076853}
+  loseScene: {fileID: 1471775164}
   lvlChoiceMenu: {fileID: 0}
   tutorialOne: {fileID: 0}
   tutorialTwo: {fileID: 0}
@@ -1509,7 +1526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -72}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2041388742

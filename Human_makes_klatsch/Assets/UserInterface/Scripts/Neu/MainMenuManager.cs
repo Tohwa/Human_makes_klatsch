@@ -16,8 +16,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject pauseSettings;
 
     [SerializeField] GameObject endScreen;
-    // [SerializeField] GameObject winScene;
-    // [SerializeField] GameObject loseScene;
+    [SerializeField] GameObject winScene;
+    [SerializeField] GameObject loseScene;
     // [SerializeField] GameObject endSettings;
 
     [SerializeField] GameObject lvlChoiceMenu;
@@ -174,6 +174,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClick_QuitGame()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 

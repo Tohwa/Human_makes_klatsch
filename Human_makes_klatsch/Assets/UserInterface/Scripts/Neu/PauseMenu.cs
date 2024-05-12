@@ -6,24 +6,7 @@ public class PauseMenu : MonoBehaviour
     private bool isPaused = false;
 
     public GameObject pauseMenu;
-
-    private PlayerInput playerInput;
-
-    private void Awake()
-    {
-        playerInput = new PlayerInput();
-        playerInput.actions["Pause"].performed += ctx => TogglePauseMenu();
-    }
-
-    private void OnEnable()
-    {
-        playerInput.enabled = true;
-    }
-
-    private void OnDisable()
-    {
-        playerInput.enabled = false;
-    }
+    public GameObject settingsMenu;
 
     private void TogglePauseMenu()
     {
@@ -45,9 +28,37 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
     }
 
-    private void ResumeGame()
+    public void ResumeGame()
     {
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
+    }
+
+    public void OpenSettings()
+    {
+        pauseMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        pauseMenu.SetActive(true);
+        settingsMenu.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
+    }
+
+    public void OpenPauseMenu(InputAction.CallbackContext ctx)
+    {
+        if(ctx.started)
+        {
+            TogglePauseMenu();
+        }
     }
 }
