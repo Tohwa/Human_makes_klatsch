@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rayLength;
 
     [SerializeField] private LayerMask groundLayers;
-    [SerializeField] private bool grounded;
-    [SerializeField] private bool hasJumped = true;
+    //[SerializeField] private bool grounded;
+    //[SerializeField] private bool hasJumped = true;
 
     private Vector2 _moveValue;
     
@@ -34,27 +34,30 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-       /*  if (transform.position.x < -xRange) 
-         {
-             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-         }
+        /*  if (transform.position.x < -xRange) 
+          {
+              transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+          }
 
-         if (transform.position.x > xRange)
-         {
-             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-         }
-        
+          if (transform.position.x > xRange)
+          {
+              transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+          }
 
-         horizontalInput = Input.GetAxis("Horizontal");
-         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-        
-        */
-        grounded = CheckGrounded();
-        Debug.DrawRay(transform.position, Vector2.down * rayLength, Color.black);
-        if(grounded)
+
+          horizontalInput = Input.GetAxis("Horizontal");
+          transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+
+         */
+        GameManager.Instance.SetGroundedStatus(CheckGrounded());
+
+
+        //Debug.DrawRay(transform.position, Vector2.down * rayLength, Color.black);
+
+        if(GameManager.Instance.GetGroundedStatus())
         {
-           
-            hasJumped = false;
+
+            GameManager.Instance.SetJumpStatus(false);
         }
         
 
@@ -77,7 +80,7 @@ public class PlayerController : MonoBehaviour
         if (context.started)
         {
 
-            if (!hasJumped)
+            if (!GameManager.Instance.GetJumpStatus())
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
@@ -85,11 +88,10 @@ public class PlayerController : MonoBehaviour
 
         if (context.canceled)
         {
-                hasJumped = true;
-
+            GameManager.Instance.SetJumpStatus(true);
         }
       
-        Debug.Log(context);
+        //Debug.Log(context);
     }
     private void FixedUpdate()
     {

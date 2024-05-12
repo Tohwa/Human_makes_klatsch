@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private bool looseCondition = false;
 
+    private bool hasJumped { get; set; }
+
+    private bool grounded { get; set; }
+
     private void Awake()
     {
         if (Instance != null)
@@ -88,5 +92,19 @@ public class GameManager : MonoBehaviour
         {
             looseCondition = true;
         }
+    }
+
+    public bool GetJumpStatus() { return hasJumped; }
+
+    public void SetJumpStatus(bool _value)
+    {
+        hasJumped = _value;
+    }
+
+    public bool GetGroundedStatus() { return grounded; }
+
+    public void SetGroundedStatus(bool _value)
+    {
+        grounded = _value;
     }
 }

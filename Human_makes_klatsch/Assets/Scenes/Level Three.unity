@@ -261,11 +261,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _impulseForce: 1
---- !u!1 &349715592 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8550664681303683774, guid: 2d9669b5ea843dd4db8ebfa66bab1697, type: 3}
-  m_PrefabInstance: {fileID: 990553576}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &538221345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -614,11 +609,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4230752611142201961, guid: 0709335c7b32ab644a03ca3e8e8f05d2, type: 3}
   m_PrefabInstance: {fileID: 906002579}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &962202371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6784849504123667128, guid: 08b3e9d6851efaf45a0c0dcd33a83c61, type: 3}
-  m_PrefabInstance: {fileID: 1637394338}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &990553576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -832,16 +822,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2028868581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1508854164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7718052736325499075, guid: 2c98aee09b061c046ba13f4de8744b84, type: 3}
-  m_PrefabInstance: {fileID: 3600744455828386555}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1512350506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3042929132833399521, guid: 8e056355b25ff6b41b9dba4fcdc9d643, type: 3}
-  m_PrefabInstance: {fileID: 6134413899738596059}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1567698331
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,11 +910,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b3e9d6851efaf45a0c0dcd33a83c61, type: 3}
---- !u!1 &1765739614 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4208856195248995237, guid: d4c11dc4013e9894a89677b8c3dfc75d, type: 3}
-  m_PrefabInstance: {fileID: 2011381951}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1794249478
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,18 +942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _version: 2
   _crossSceneReferences: []
-  _realSceneRootsForPostBuild:
-  - {fileID: 139415176}
-  - {fileID: 1794249478}
-  - {fileID: 1765739614}
-  - {fileID: 903906675364049842}
-  - {fileID: 1512350506}
-  - {fileID: 692232389}
-  - {fileID: 1909662164}
-  - {fileID: 349715592}
-  - {fileID: 962202371}
-  - {fileID: 2028868580}
-  - {fileID: 1508854164}
+  _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!114 &1794249480
 MonoBehaviour:
@@ -1080,11 +1044,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2028868581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1909662164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8292033101596609886, guid: cec2470f33717f14ca53c28718aeacbf, type: 3}
-  m_PrefabInstance: {fileID: 4732239058368214553}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1940728779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4230752611142201961, guid: 0709335c7b32ab644a03ca3e8e8f05d2, type: 3}
