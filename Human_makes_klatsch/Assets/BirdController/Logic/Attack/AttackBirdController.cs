@@ -251,7 +251,6 @@ public class AttackBirdController : MonoBehaviour
     /// </summary>
     private void PlayerHitBinding()
     {
-        GameManager.Instance.ApplyDamager();
 
         // Tells the bird to return
         EndAttack();

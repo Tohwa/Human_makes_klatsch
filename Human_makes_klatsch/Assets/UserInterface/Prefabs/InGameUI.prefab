@@ -33,7 +33,7 @@ RectTransform:
   m_Father: {fileID: 6729138739254787018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.362, y: 0.000030517578}
   m_SizeDelta: {x: -16.344, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.745283, g: 0.0738252, b: 0.0738252, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8615418306347223622}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: OnClick_PauseSetting
         m_Mode: 1
@@ -1042,9 +1042,10 @@ GameObject:
   - component: {fileID: 3816922714675132773}
   - component: {fileID: 7096110061044419016}
   - component: {fileID: 349265154838223009}
+  - component: {fileID: 6084587463936551768}
   m_Layer: 5
   m_Name: LifeDisplay
-  m_TagString: Untagged
+  m_TagString: Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1106,6 +1107,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6084587463936551768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5478687677428020331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b625e48d4eea449b748e6721ea546a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noCracks: {fileID: -460219699, guid: 7ab5944e5c61f4a41b4678050fb431f8, type: 3}
+  oneCrack: {fileID: 1388375424, guid: 7ab5944e5c61f4a41b4678050fb431f8, type: 3}
+  twoCracks: {fileID: -846112423, guid: 7ab5944e5c61f4a41b4678050fb431f8, type: 3}
+  threeCracks: {fileID: 527359161, guid: 7ab5944e5c61f4a41b4678050fb431f8, type: 3}
+  fourCracks: {fileID: 490252633, guid: 7ab5944e5c61f4a41b4678050fb431f8, type: 3}
+  brokenEgg: {fileID: -1539767966, guid: 7ab5944e5c61f4a41b4678050fb431f8, type: 3}
 --- !u!1 &5506472969364629865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,7 +1320,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8615418306347223622}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: OnClick_Continue
         m_Mode: 1
@@ -1433,7 +1452,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8615418306347223622}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: OnClick_BackToMain
         m_Mode: 1
@@ -1532,6 +1551,7 @@ MonoBehaviour:
   mainCredits: {fileID: 0}
   pauseMenu: {fileID: 7408961137747868699}
   pauseSettings: {fileID: 1156116006660124581}
+  endScreen: {fileID: 0}
   lvlChoiceMenu: {fileID: 0}
   tutorialOne: {fileID: 0}
   tutorialTwo: {fileID: 0}
@@ -1849,7 +1869,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: OnClick_BackToMain
+        m_MethodName: OnClick_BackToPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

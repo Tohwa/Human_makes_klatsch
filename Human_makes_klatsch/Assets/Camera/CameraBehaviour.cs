@@ -33,15 +33,19 @@ public class Cameralock : MonoBehaviour
             _background = GameObject.FindGameObjectWithTag("Background");
         }
 
-        
+
     }
     private void LateUpdate()
     {
-        Vector3 playerPosition = _player.transform.position;
+        if (GameManager.Instance.GetPlayerHealth() > 0)
+        {
+            Vector3 playerPosition = _player.transform.position;
 
-        float clampedX = Mathf.Clamp(playerPosition.x, _playableArea.bounds.min.x + cameraHalfWidth, _playableArea.bounds.max.x - cameraHalfWidth);
-        float clampedY = Mathf.Clamp(playerPosition.y, _playableArea.bounds.min.y + cameraHalfHeight, _playableArea.bounds.max.y - cameraHalfHeight);
+            float clampedX = Mathf.Clamp(playerPosition.x, _playableArea.bounds.min.x + cameraHalfWidth, _playableArea.bounds.max.x - cameraHalfWidth);
+            float clampedY = Mathf.Clamp(playerPosition.y, _playableArea.bounds.min.y + cameraHalfHeight, _playableArea.bounds.max.y - cameraHalfHeight);
 
-        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+            transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+
+        }
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Spawn
   - Goal
   - Background
+  - Health
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

@@ -53,21 +53,18 @@ public class GameManager : MonoBehaviour
     {
         if (winCondition)
         {
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene(5);
+        }
+
+        if(looseCondition)
+        {
+            SceneManager.LoadScene(5);
         }
 
         if (playerHealth <= 0)
         {
             playerHealth = 0;
-        }
-
-        if(looseCondition)
-        {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
-
-            //Application.Quit(); JUST DONT!
+            SetLooseCondition();
         }
 
     }

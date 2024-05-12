@@ -16,8 +16,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject pauseSettings;
 
     [SerializeField] GameObject endScreen;
-    // [SerializeField] GameObject winScene;
-    // [SerializeField] GameObject loseScene;
+    [SerializeField] GameObject winScene;
+    [SerializeField] GameObject loseScene;
     // [SerializeField] GameObject endSettings;
 
     [SerializeField] GameObject lvlChoiceMenu;
@@ -60,13 +60,13 @@ public class MainMenuManager : MonoBehaviour
         mainMenu.SetActive(false);
     }
 
-    public void PauseMenuHandler()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            pauseMenu.SetActive(true);
-        }
-    }
+    //public void PauseMenuHandler()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Escape))
+    //    {
+    //        pauseMenu.SetActive(true);
+    //    }
+    //}
 
     public void OnClick_PauseSetting()
     {
@@ -174,6 +174,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClick_QuitGame()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 

@@ -204,7 +204,7 @@ MonoBehaviour:
   - {fileID: 7980608217821548834}
   - {fileID: 7602107646590212275}
   - {fileID: 176426996578157654}
-  bird: {fileID: 5193695484196598992, guid: e2a4b1b0915023145a2d55bfbb8ee026, type: 3}
+  bird: {fileID: 2241800741342150093, guid: 527be04d7a2dd054eb379555bef68b1d, type: 3}
   timeToSpawn: 2
   counter: 0
   isOccupied: 0
