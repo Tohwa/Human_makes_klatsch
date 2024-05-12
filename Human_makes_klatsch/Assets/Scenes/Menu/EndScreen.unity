@@ -444,8 +444,86 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3132361179355570933, guid: 2e39eaa7d16394d4eb5794f92bd8382f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4513158821184709018}
+    - targetCorrespondingSourceObject: {fileID: 3132361179355570933, guid: 2e39eaa7d16394d4eb5794f92bd8382f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4513158821184709017}
   m_SourcePrefab: {fileID: 100100000, guid: 2e39eaa7d16394d4eb5794f92bd8382f, type: 3}
+--- !u!1 &4513158821184709015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3132361179355570933, guid: 2e39eaa7d16394d4eb5794f92bd8382f, type: 3}
+  m_PrefabInstance: {fileID: 4513158821184709014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4513158821184709016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 951727938700686782, guid: 2e39eaa7d16394d4eb5794f92bd8382f, type: 3}
+  m_PrefabInstance: {fileID: 4513158821184709014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513158821184709015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438f3de87d831634b8e3e92ad26266ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4513158821184709017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513158821184709015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce466afb5b124e040bf247c5dd5240ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 393ede26fb8d76e4fa10c0a3503af4a2, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4513158821184709016}
+        m_TargetAssemblyTypeName: CheckForEndMessage, Assembly-CSharp
+        m_MethodName: SetLoose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4513158821184709018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513158821184709015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce466afb5b124e040bf247c5dd5240ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 4acb5e64f6d623349952fdbb8b9b3c9c, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4513158821184709016}
+        m_TargetAssemblyTypeName: CheckForEndMessage, Assembly-CSharp
+        m_MethodName: SetWin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

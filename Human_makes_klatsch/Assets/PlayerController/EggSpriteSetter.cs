@@ -39,6 +39,7 @@ public class EggSpriteSetter : MonoBehaviour
         }
         else if (GameManager.Instance.GetPlayerHealth() == 0)
         {
+            GameManager.Instance.SetLooseCondition();
             Destroy(player);
         }
     }

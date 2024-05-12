@@ -10,6 +10,7 @@ public class EndZoneBehaviour : MonoBehaviour
     {
         if (collision.CompareTag("Egg"))
         {
+            Destroy(collision.gameObject);
             GameManager.Instance.SetWinCondition();
         }
     }

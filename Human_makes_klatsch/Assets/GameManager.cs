@@ -7,11 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    [SerializeField]
-    GameObject eggPrefab;
-
-    [SerializeField]
-    private List<GameObject> EggSpawns = new List<GameObject>();
+    [SerializeField] GameEvent winCon;
+    [SerializeField] GameEvent loseCon;
 
     [SerializeField]
     private float playerHealth = 4;
@@ -40,33 +37,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    private void Start()
+    public void ChangeSceneToEnd()
     {
-        int rnd = Random.Range(0, EggSpawns.Count);
-
-        Transform spawnPos = EggSpawns[rnd].transform;
-
-        Instantiate(eggPrefab, spawnPos.position, Quaternion.identity, null);
-    }
-
-    private void Update()
-    {
-        if (winCondition)
-        {
-            SceneManager.LoadScene(5);
-        }
-
-        if(looseCondition)
-        {
-            SceneManager.LoadScene(5);
-        }
-
-        if (playerHealth <= 0)
-        {
-            playerHealth = 0;
-            SetLooseCondition();
-        }
-
+        SceneManager.LoadScene("EndScreen");
     }
 
     public float GetPlayerHealth() { return playerHealth; }
@@ -80,6 +53,7 @@ public class GameManager : MonoBehaviour
 
     public void SetWinCondition()
     {
+        winCon.Raise();
         winCondition = true;
     }
 
@@ -89,6 +63,7 @@ public class GameManager : MonoBehaviour
     {
         if (playerHealth == 0)
         {
+            loseCon.Raise();
             looseCondition = true;
         }
     }
