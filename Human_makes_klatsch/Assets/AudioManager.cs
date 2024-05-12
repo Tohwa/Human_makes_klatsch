@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     private AudioClip[] eggDamageSound = new AudioClip[3];
 
     [SerializeField]
-    private AudioClip falconDistance, falconAttack, winSound, looseSound;
+    private AudioClip falconDistance, falconAttack, snakeAttack, winSound, looseSound;
 
 
     private void Awake()
@@ -65,6 +65,11 @@ public class AudioManager : MonoBehaviour
     public void FalconAttack()
     {
         audioSource.PlayOneShot(falconAttack);
+    }
+
+    public void SnakeSound()
+    {
+        audioSource.PlayOneShot(snakeAttack);
     }
 
     public void PlayWinSound()

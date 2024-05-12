@@ -3,16 +3,20 @@ using UnityEngine;
 public class SnakeMove : MonoBehaviour
 {
     [SerializeField]
-    private float _movementSpeed = 10.0f, _maxMoveDistance = 5.0f;
+    private float _movementSpeed = 2.0f;
 
     [SerializeField]
     private Sprite[] _spriteArray = new Sprite[2];
+
+    [SerializeField]
+    private SnakeAttack _snakeAttack;
 
     private SpriteRenderer _spriteRenderer;
     private SnakeFrontCheck _frontCheck;
     private Collider2D _frontCheckCollider;
 
     private bool _isPlayerDetected = false;
+    private float _maxMoveDistance;
     private Vector2 _startPosition;
     private Vector2 _playerPosition;
 
@@ -56,7 +60,7 @@ public class SnakeMove : MonoBehaviour
 
         Vector2 _maxDistance = new(_startPosition.x + _maxMoveDistance * Mathf.Sign(_playerPosition.x - _startPosition.x), _startPosition.y);
 
-        if (_isPlayerDetected)
+        if (_isPlayerDetected && _snakeAttack.SnakeAttackCounter > 0)
         {
             _spriteRenderer.sprite = _spriteArray[1];
 

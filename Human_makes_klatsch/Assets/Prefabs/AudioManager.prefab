@@ -45,7 +45,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 2797875437183858153, guid: b18678178b9567645892d2117e4cea01, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6396453381240d1409f2ed802be77f33, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 8199881574325812746}
   - component: {fileID: 2662767252815526405}
   - component: {fileID: 8133158128689704325}
+  - component: {fileID: -593721034836398378}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -280,6 +281,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2cc3ab4431f75514b91a5667e8ce8bfc, type: 3}
   falconDistance: {fileID: 8300000, guid: f2e296f6e91e9ae459d16834bed8897c, type: 3}
   falconAttack: {fileID: 8300000, guid: 1b01fc4ef6fc73e48a5a6af329d9680f, type: 3}
+  snakeAttack: {fileID: 8300000, guid: 70fbe23b5b442f241a71da94fdd2768f, type: 3}
   winSound: {fileID: 8300000, guid: a419d8793c4987443ada737373f733b1, type: 3}
   looseSound: {fileID: 8300000, guid: a8868d7cf64132640911edd9d4d9521b, type: 3}
 --- !u!114 &2662767252815526405
@@ -329,6 +331,34 @@ MonoBehaviour:
       - m_Target: {fileID: 8199881574325812746}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: FalconAttack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-593721034836398378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415165737766504994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce466afb5b124e040bf247c5dd5240ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 08b524ff298bfa04eb2df40b4f5ecdba, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8199881574325812746}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SnakeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
