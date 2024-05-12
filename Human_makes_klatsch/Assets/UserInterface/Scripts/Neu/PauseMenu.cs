@@ -10,15 +10,15 @@ public class PauseMenu : MonoBehaviour
 
     private void TogglePauseMenu()
     {
-        isPaused = !isPaused;
 
-        if (isPaused)
+        if (!isPaused)
         {
             PauseGame();
         }
         else
         {
             ResumeGame();
+            isPaused = !isPaused;
         }
     }
 

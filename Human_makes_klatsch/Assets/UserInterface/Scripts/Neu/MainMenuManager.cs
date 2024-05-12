@@ -60,13 +60,13 @@ public class MainMenuManager : MonoBehaviour
         mainMenu.SetActive(false);
     }
 
-    public void PauseMenuHandler()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            pauseMenu.SetActive(true);
-        }
-    }
+    //public void PauseMenuHandler()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Escape))
+    //    {
+    //        pauseMenu.SetActive(true);
+    //    }
+    //}
 
     public void OnClick_PauseSetting()
     {

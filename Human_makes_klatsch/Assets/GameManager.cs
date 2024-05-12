@@ -53,12 +53,12 @@ public class GameManager : MonoBehaviour
     {
         if (winCondition)
         {
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene(5);
         }
 
         if(looseCondition)
         {
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene(5);
         }
 
         if (playerHealth <= 0)
