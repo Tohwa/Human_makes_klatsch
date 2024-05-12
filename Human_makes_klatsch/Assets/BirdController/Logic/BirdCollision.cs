@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class BirdCollision : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    //private void OnCollisionEnter2D(Collision2D other)
+    //{
+    //    if(other.collider.CompareTag("Egg"))
+    //    {
+    //        // Inform listeners that player was hit
+    //        OnPlayerHit?.Invoke();
+    //        GameManager.Instance.ApplyDamager();
+    //        // Connect to event system here ...
+    //    }
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.collider.CompareTag("Egg"))
+        if (collision.CompareTag("Egg"))
         {
             // Inform listeners that player was hit
             OnPlayerHit?.Invoke();
@@ -14,7 +25,6 @@ public class BirdCollision : MonoBehaviour
             // Connect to event system here ...
         }
     }
-
 
     public delegate void PlayerHit();
 
