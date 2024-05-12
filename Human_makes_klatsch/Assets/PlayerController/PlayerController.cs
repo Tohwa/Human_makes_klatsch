@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
                      public float xRange = 10.0f;
                      public float horizontalInput;
     [Range(1, 8)]     public int health = 4;
-    [Range(1f, 20f)] public float speed = 5.0f;
+    [Range(1f, 100f)] public float speed = 5.0f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float jumpForce = 5.0f;
     [SerializeField] private float rayLength;
@@ -24,12 +24,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool hasJumped = true;
 
     private Vector2 _moveValue;
-
-    private float coyoteTime = 0.2f;
-    private float coyoteTimeCounter;
-
-    private float bufferTime = 0.2f;
-    private float bufferTimeCounter;
     
     private void Start()
     {
