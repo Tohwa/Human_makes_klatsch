@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Egg
   - Spawn
+  - Goal
   layers:
   - Default
   - TransparentFX

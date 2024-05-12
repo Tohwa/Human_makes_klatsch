@@ -45,15 +45,25 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (winCondition)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
+
         if (playerHealth <= 0)
         {
             playerHealth = 0;
         }
 
-        if (winCondition)
+        if(looseCondition)
         {
-            SceneManager.LoadScene("EndScreen");
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
+            //Application.Quit(); JUST DONT!
         }
+
     }
 
     public float GetPlayerHealth() { return playerHealth; }

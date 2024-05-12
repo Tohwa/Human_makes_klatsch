@@ -3,7 +3,7 @@ using UnityEngine;
 public class SnakeAttack : MonoBehaviour
 {
     [SerializeField]
-    private float _impulseForce = 100.0f;
+    private float _impulseForce = 1.0f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
