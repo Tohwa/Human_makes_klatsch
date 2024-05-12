@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,11 +21,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private bool looseCondition = false;
 
-    private bool hasJumped { get; set; }
+    public static event Action<float> PlayerDamaged;
 
-    private bool grounded { get; set; }
-
-    private bool hunterSpawned { get; set; }
+    public bool HasJumped { get; set; }
+    public bool Grounded { get; set; }
+    public bool HunterSpawned { get; set; }
 
     private void Awake()
     {
@@ -47,6 +48,7 @@ public class GameManager : MonoBehaviour
     public void ApplyDamager()
     {
         playerHealth = playerHealth - damageValue;
+        PlayerDamaged?.Invoke(playerHealth);
     }
 
     public bool GetWinCondition() { return winCondition; }
@@ -68,24 +70,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public bool GetJumpStatus() { return hasJumped; }
+    public bool GetJumpStatus() { return HasJumped; }
 
     public void SetJumpStatus(bool _value)
     {
-        hasJumped = _value;
+        HasJumped = _value;
     }
 
-    public bool GetGroundedStatus() { return grounded; }
+    public bool GetGroundedStatus() { return Grounded; }
 
     public void SetGroundedStatus(bool _value)
     {
-        grounded = _value;
+        Grounded = _value;
     }
 
-    public bool GetHunterStatus() { return hunterSpawned; }
+    public bool GetHunterStatus() { return HunterSpawned; }
 
     public void SetHunterStatus(bool _value)
     {
-        hunterSpawned = _value;
+        HunterSpawned = _value;
     }
 }

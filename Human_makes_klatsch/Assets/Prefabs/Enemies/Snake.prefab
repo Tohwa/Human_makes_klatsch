@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9056599535844988700}
   m_Layer: 0
   m_Name: Snake
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,11 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e3b9bfd1e40d44f84c2255c3188374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 10
-  _maxMoveDistance: 5
+  _movementSpeed: 5
   _spriteArray:
   - {fileID: -861765137, guid: ce406376e44b2d9458fa96db93f02cdb, type: 3}
   - {fileID: 695641986, guid: ce406376e44b2d9458fa96db93f02cdb, type: 3}
+  _snakeAttack: {fileID: 9056599535844988700}
 --- !u!114 &9056599535844988700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ca2029d0314b2448002108a49da0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _impulseForce: 10
+  _attackCounter: 1
+  _impulseForce: 2
+  SnakeAttacked: {fileID: 11400000, guid: 08b524ff298bfa04eb2df40b4f5ecdba, type: 2}
 --- !u!1 &8525076022743711446
 GameObject:
   m_ObjectHideFlags: 0

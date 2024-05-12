@@ -416,7 +416,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneSetupMode: 0
-  _sceneSetup: []
+  _sceneSetup:
+  - scene:
+      editorAssetGUID: bd6a1963268920e478d73d2d735dadf6
+      name: Audio
+      _path: Assets/Scenes/WIP/Audio.unity
+    loadInEditor: 1
+    loadMethod: 1
   _isMainScene: 0
   _version: 1
   _thisScenePath: Assets/Scenes/Menu/MainMenu.unity

@@ -10,6 +10,7 @@ TagManager:
   - Background
   - Health
   - PauseMenu
+  - Enemy
   layers:
   - Default
   - TransparentFX
