@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4966809301424904199}
   - component: {fileID: 7086704701710182233}
   - component: {fileID: 4356998452077184296}
+  - component: {fileID: 7814660182106617369}
   m_Layer: 0
   m_Name: Safe_Nest
   m_TagString: Untagged
@@ -130,3 +131,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.3134184, y: 0.8373951}
   m_EdgeRadius: 0
+--- !u!114 &7814660182106617369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057060174079712232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e050a439c967da948bfff00ef9dc1d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdSpawn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bird: {fileID: 0}
+  timeToSpawn: 2
+  counter: 0
+  isOccupied: 0

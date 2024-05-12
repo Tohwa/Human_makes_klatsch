@@ -248,8 +248,6 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 1024
-  grounded: 0
-  hasJumped: 1
 --- !u!114 &5886637154268464380
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -526,14 +526,6 @@ PrefabInstance:
       value: SafeNest
       objectReference: {fileID: 0}
     - target: {fileID: 8445394666306829952, guid: a39c4cb4b6167714887f50c87cdbc7e9, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8445394666306829952, guid: a39c4cb4b6167714887f50c87cdbc7e9, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8445394666306829952, guid: a39c4cb4b6167714887f50c87cdbc7e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.539577
       objectReference: {fileID: 0}

@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     private bool grounded { get; set; }
 
+    private bool hunterSpawned { get; set; }
+
     private void Awake()
     {
         if (Instance != null)
@@ -106,5 +108,12 @@ public class GameManager : MonoBehaviour
     public void SetGroundedStatus(bool _value)
     {
         grounded = _value;
+    }
+
+    public bool GetHunterStatus() { return hunterSpawned; }
+
+    public void SetHunterStatus(bool _value)
+    {
+        hunterSpawned = _value;
     }
 }
