@@ -189,7 +189,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1098893646
+--- !u!1 &1272490000
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,120 +197,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1098893648}
-  - component: {fileID: 1098893647}
+  - component: {fileID: 1272490002}
+  - component: {fileID: 1272490001}
   m_Layer: 0
-  m_Name: MainMenuManager
+  m_Name: PauseMenuManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1098893647
+--- !u!114 &1272490001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098893646}
+  m_GameObject: {fileID: 1272490000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbe080c38b8672d4e97a7def296c7228, type: 3}
+  m_Script: {fileID: 11500000, guid: c6b94fc502ff8984699b2efbbab82693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 0}
-  mainSettings: {fileID: 0}
-  mainCredits: {fileID: 0}
   pauseMenu: {fileID: 1835022903}
-  pauseSettings: {fileID: 0}
-  winScene: {fileID: 0}
-  loseScene: {fileID: 0}
-  endSettings: {fileID: 0}
-  lvlChoiceMenu: {fileID: 0}
-  tutorialOne: {fileID: 0}
-  tutorialTwo: {fileID: 0}
-  tutorialThree: {fileID: 0}
-  buttonReact: {fileID: 0}
-  button: {fileID: 0}
-  buttonBase: {fileID: 0}
---- !u!4 &1098893648
+--- !u!4 &1272490002
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098893646}
+  m_GameObject: {fileID: 1272490000}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 158.78613, y: 186.70044, z: -2.3866494}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1343085538
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1343085541}
-  - component: {fileID: 1343085540}
-  - component: {fileID: 1343085539}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1343085539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343085538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1343085540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343085538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1343085541
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343085538}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 897.49976, y: 565.3343, z: -6.2927804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -327,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 795849690314846061, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1098893647}
+      objectReference: {fileID: 0}
     - target: {fileID: 2905471762268529478, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
@@ -335,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 5719648179500322169, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1098893647}
+      objectReference: {fileID: 0}
     - target: {fileID: 5944937482272978515, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -435,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 7733522220834960445, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1098893647}
+      objectReference: {fileID: 0}
     - target: {fileID: 7733522220834960445, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClick_BackToPause
@@ -443,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 8019633127551402768, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1098893647}
+      objectReference: {fileID: 0}
     - target: {fileID: 8725086777434988401, guid: ce3aa2232a61aa94fadf44ddc1856d7b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -468,5 +386,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 504179856}
   - {fileID: 1835022899}
-  - {fileID: 1343085541}
-  - {fileID: 1098893648}
+  - {fileID: 1272490002}
