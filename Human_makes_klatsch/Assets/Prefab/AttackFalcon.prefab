@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2634591112607755037}
   - component: {fileID: 7273932633549986163}
   - component: {fileID: 9220359634878189038}
+  - component: {fileID: 5990919166119461940}
   m_Layer: 0
   m_Name: AttackFalcon
   m_TagString: Untagged
@@ -213,3 +214,15 @@ MonoBehaviour:
   _movementSpeed: 10
   _returnAngle: 0
   _useDebugger: 0
+--- !u!114 &5990919166119461940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193695484196598992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208b572b062a42a488fec099b595ddae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

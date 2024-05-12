@@ -101,7 +101,7 @@ public class AttackBirdController : MonoBehaviour
 
         // Short message that player was found
         PrintMessage(true, "Egg found, continue.");
-        //return;
+        return;
     }
 
     /// <summary>

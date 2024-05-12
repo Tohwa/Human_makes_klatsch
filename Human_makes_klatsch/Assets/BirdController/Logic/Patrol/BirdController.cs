@@ -10,8 +10,6 @@ public class BirdController : MonoBehaviour
     [SerializeField] private GameObject _pointA;
     [SerializeField] private GameObject _pointB;
 
-    [SerializeField]
-    private float _impulseForce = 1.0f;
 
     private GameObject _target;
     private SpriteRenderer _spriteRenderer;

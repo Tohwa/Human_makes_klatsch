@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,10 @@ public class MainMenuManager : MonoBehaviour
 
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject pauseSettings;
+
+    [SerializeField] GameObject winScene;
+    [SerializeField] GameObject loseScene;
+    [SerializeField] GameObject endSettings;
 
     [SerializeField] GameObject lvlChoiceMenu;
     [SerializeField] GameObject tutorialOne;
@@ -43,12 +48,12 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClick_Continue()
     {
-        pauseMenu.SetActive(false);
+        SceneManager.LoadScene("Level One");
     }
 
-    public void OnClick_ContinueAfterEnd()
+    public void OnClick_NextLevel()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("");
     }
 
     public void OnClick_MainSettings()
@@ -75,6 +80,23 @@ public class MainMenuManager : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
+    public void OnClick_EndSettings()
+    {
+        endSettings.SetActive(true);
+        winScene.SetActive(false);
+        loseScene.SetActive(false);
+    }
+
+    public void OnClick_WinScene()
+    {
+
+    }
+
+    public void OnClick_LoseScene()
+    {
+
+    }
+
     public void OnClick_NormalBackToMain()
     {
         SceneManager.LoadScene("MainMenu");
@@ -88,6 +110,11 @@ public class MainMenuManager : MonoBehaviour
     public void OnClick_BackToPause()
     {
         StartCoroutine(DelayBackToPause());
+    }
+
+    public void OnClick_DelayBackToWinScene()
+    {
+        StartCoroutine(DelayBackToWinScene());
     }
 
     private IEnumerator DelayBackToMain()
@@ -108,6 +135,15 @@ public class MainMenuManager : MonoBehaviour
         pauseMenu.SetActive(true);
         buttonReact.SetActive(false);
         pauseSettings.SetActive(false);
+    }
+
+    private IEnumerator DelayBackToWinScene()
+    {
+        buttonReact.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        endSettings.SetActive(true);
+        buttonReact.SetActive(false);
+        winScene.SetActive(false);
     }
 
     public void OnClick_LvlChoiceMenu()
@@ -134,5 +170,10 @@ public class MainMenuManager : MonoBehaviour
     public void OnClick_QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OnClick_QuitMain()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
