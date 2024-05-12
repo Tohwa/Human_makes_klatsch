@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    GameManager gameManager;
+
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject mainSettings;
     [SerializeField] GameObject mainCredits;
@@ -13,9 +15,10 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject pauseSettings;
 
+    [SerializeField] GameObject endScreen;
     [SerializeField] GameObject winScene;
     [SerializeField] GameObject loseScene;
-    [SerializeField] GameObject endSettings;
+    // [SerializeField] GameObject endSettings;
 
     [SerializeField] GameObject lvlChoiceMenu;
     [SerializeField] GameObject tutorialOne;
@@ -48,18 +51,21 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClick_Continue()
     {
-        SceneManager.LoadScene("Level One");
-    }
-
-    public void OnClick_NextLevel()
-    {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void OnClick_MainSettings()
     {
         mainSettings.SetActive(true);
         mainMenu.SetActive(false);
+    }
+
+    public void PauseMenuHandler()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(true);
+        }
     }
 
     public void OnClick_PauseSetting()
@@ -80,23 +86,6 @@ public class MainMenuManager : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
-    public void OnClick_EndSettings()
-    {
-        endSettings.SetActive(true);
-        winScene.SetActive(false);
-        loseScene.SetActive(false);
-    }
-
-    public void OnClick_WinScene()
-    {
-
-    }
-
-    public void OnClick_LoseScene()
-    {
-
-    }
-
     public void OnClick_NormalBackToMain()
     {
         SceneManager.LoadScene("MainMenu");
@@ -112,10 +101,15 @@ public class MainMenuManager : MonoBehaviour
         StartCoroutine(DelayBackToPause());
     }
 
-    public void OnClick_DelayBackToWinScene()
+    public void OnClick_DelayBackToMainLVLChoice()
     {
-        StartCoroutine(DelayBackToWinScene());
+        StartCoroutine(DelayBackToMainLVLChoice());
     }
+
+    // public void OnClick_DelayBackToEndScene()
+    // {
+    //     StartCoroutine(DelayBackToEndScene());
+    // }
 
     private IEnumerator DelayBackToMain()
     {
@@ -128,6 +122,17 @@ public class MainMenuManager : MonoBehaviour
         mainSettings.SetActive(false);
     }
 
+    private IEnumerator DelayBackToMainLVLChoice()
+    {
+        buttonReact.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        mainMenu.SetActive(true);
+        buttonReact.SetActive(false);
+        buttonBase.SetActive(false);
+        button.SetActive(false);
+        lvlChoiceMenu.SetActive(false);
+    }
+
     private IEnumerator DelayBackToPause()
     {
         buttonReact.SetActive(true);
@@ -137,14 +142,14 @@ public class MainMenuManager : MonoBehaviour
         pauseSettings.SetActive(false);
     }
 
-    private IEnumerator DelayBackToWinScene()
-    {
-        buttonReact.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        endSettings.SetActive(true);
-        buttonReact.SetActive(false);
-        winScene.SetActive(false);
-    }
+    // private IEnumerator DelayBackToEndScene()
+    // {
+    //     buttonReact.SetActive(true);
+    //     yield return new WaitForSeconds(1f);
+    //     endSettings.SetActive(true);
+    //     buttonReact.SetActive(false);
+    //     winScene.SetActive(false);
+    // }
 
     public void OnClick_LvlChoiceMenu()
     {
@@ -169,6 +174,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClick_QuitGame()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 
